@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Salão da Anielle",
+    "slug": "salao-bella",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#C2185B"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Permitir acesso à galeria para adicionar fotos dos trabalhos realizados.",
+          "cameraPermission": "Permitir acesso à câmera para fotografar os trabalhos realizados."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#C2185B"
+        }
+      ],
+      "expo-asset"
+    ],
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#C2185B"
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE"
+      ]
+    },
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Para fotografar os trabalhos realizados.",
+        "NSPhotoLibraryUsageDescription": "Para adicionar fotos dos trabalhos ao portfólio."
+      }
+    }
+  }
+}
